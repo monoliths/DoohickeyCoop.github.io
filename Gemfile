@@ -53,11 +53,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Required for bootstrap
-gem 'sprockets-rails', :require => 'sprockets/railtie'
-
 # Decent CSS Framework
 gem 'bootstrap', '~> 4.0.0'
 
 # Required for bootstrap
 gem 'jquery-rails'
+
+# Icons needed by themes
+gem "font-awesome-rails"

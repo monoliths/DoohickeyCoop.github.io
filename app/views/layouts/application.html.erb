@@ -9,6 +9,12 @@
   </head>
 
   <body>
+  <div class="text-center">
+    <%= image_tag '/logo.gif' %>
+  </div>
+  <div class="container">
+    <%= render 'navbar/navbar' %>
     <%= yield %>
+  </div>
   </body>
 </html>
