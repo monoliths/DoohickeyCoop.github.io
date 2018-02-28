@@ -60,4 +60,8 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Icons needed by themes
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+
+# mailchimp api wrapper
+gem 'gibbon'
+
