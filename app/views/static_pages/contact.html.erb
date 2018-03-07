@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="text-center">Contact Us</h1>
+    <p>
+      We appreciate your interest in the Doohickey Co-op. Please take a moment to let us know
+      your suggestions, comments, or questions by filling out the form below.
+    </p>
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <%= form_tag("#", method: "post", class: "form-group row") do %>
+          <%= text_field_tag(:first_name, nil, class: "form-control form-control-lg text-center", placeholder: "First Name") %>
+          <%= text_field_tag(:last_name, nil, class: "form-control form-control-lg text-center", placeholder: "Last Name") %>
+          <%= text_field_tag(:email, nil, class: "form-control form-control-lg text-center", placeholder: "Email") %>
+          <%= text_field_tag(:phone, nil, class: "form-control form-control-lg text-center", placeholder: "Phone Number") %>
+          <%= text_field_tag(:subject, nil, class: "form-control form-control-lg text-center", placeholder: "Subject") %>
+          <%= text_area_tag(:message, nil, class: "form-control form-control-lg", placeholder: "Message") %>
+          <%= submit_tag("Submit", class: "btn btn-block btn-primary") %>
+      <% end %>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+  </div>
+</div>
