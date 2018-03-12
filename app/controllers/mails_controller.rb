@@ -6,8 +6,6 @@ class MailsController < ApplicationController
     if valid_subscription?(email, first_name, last_name)
       request_subscription(email, first_name, last_name)
       flash[:success] = 'Email signed up!'
-    else
-      flash[:danger] = 'fail'
     end
     redirect_to root_path
   end
@@ -21,6 +19,10 @@ class MailsController < ApplicationController
   end
 
   def valid_subscription?(email, first_name, last_name)
+    if email.empty? || first_name.empty? || last_name.empty?
+      flash[:danger] = 'Incompleted fields were submitted'
+      return false
+    end
     true
   end
 end
