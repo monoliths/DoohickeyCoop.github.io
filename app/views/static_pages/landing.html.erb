@@ -24,9 +24,9 @@
     </div>
     <div class="col-md-8">
       <%= form_tag(subscribe_path, method: "post", class: "form-group row") do %>
-        <%= text_field_tag(:first_name, nil, class: "form-control form-control-lg text-center", placeholder: "First Name") %>
-        <%= text_field_tag(:last_name, nil, class: "form-control form-control-lg text-center", placeholder: "Last Name") %>
-        <%= text_field_tag(:email, nil, class: "form-control form-control-lg text-center", placeholder: "Email") %>
+        <%= text_field_tag(:first_name, nil, class: "form-control form-control-lg text-center", placeholder: "First Name", required: true) %>
+        <%= text_field_tag(:last_name, nil, class: "form-control form-control-lg text-center", placeholder: "Last Name", required: true) %>
+        <%= text_field_tag(:email, nil, class: "form-control form-control-lg text-center", placeholder: "Email", required: true) %>
         <%= submit_tag("Sign Up", class: "btn btn-block btn-primary") %>
     <% end %>
     </div>
