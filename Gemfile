@@ -65,6 +65,3 @@ gem 'font-awesome-rails'
 
 # mailchimp api wrapper
 gem 'gibbon'
-
-# Serve views based off device
-gem 'browser'
